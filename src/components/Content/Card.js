@@ -22,6 +22,7 @@ const Card = props => {
       <Right>
         <SumTitle>Summary</SumTitle>
         <Summary>{props.card.summary}</Summary>
+        <Button>Buy Options</Button>
       </Right>
         
 
@@ -76,6 +77,10 @@ const SumTitle = styled.h1`
 
 const Summary = styled.p`
 
+`;
+
+const Button = styled.button`
+  
 `;
 
 const ImgContainer = styled.div`

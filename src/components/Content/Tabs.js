@@ -6,6 +6,7 @@ import styled from "styled-components";
 const Tabs = props => {
   return (
     <TopicTabs>
+      <Button>Sign-Up/Sign-In</Button>
       <Topics>
        
         {props.tabs.map(tab => {return <Tab key={tab}
@@ -14,6 +15,7 @@ const Tabs = props => {
           tab={tab}></Tab>})}
           
       </Topics>
+      
     </TopicTabs>
   );
 };
@@ -28,6 +30,15 @@ Tabs.propTypes = {
 export default Tabs;
 
 const TopicTabs = styled.div`
+display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+`;
+
+const Button = styled.button`
+margin: 10px;
+margin-right:33%;
 
 `;
 
