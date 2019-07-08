@@ -57,6 +57,10 @@ const Left = styled.div`
 width:40%;
 `;
 
+const Title = styled.h1`
+  
+`;
+
 const Author = styled.h1`
 
 `;
@@ -84,6 +88,3 @@ const Img = styled.img`
 
 `;
 
-const Title = styled.h1`
-  
-`;

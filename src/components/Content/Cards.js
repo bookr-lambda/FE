@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Cards = props => {
   let cardsToDisplay
-  if (props.selectedTab !== 'all'){
+  if (props.selectedTab !== 'Reviews'){
     cardsToDisplay = props.cards.filter(card => card.tab === props.selectedTab);
   } else {
     cardsToDisplay = props.cards;
