@@ -29,7 +29,7 @@ Tab.propTypes = {
 export default Tab;
 
 const Tabs = styled.div`
-  margin: 0 10px;
+  margin: 10px;
   padding: 3px 10px;
   border-radius: 20px;
   display: flex;
