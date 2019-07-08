@@ -8,18 +8,19 @@ const Card = props => {
     <CardBody>
 
       <Left>
-        <Artist>{props.card.title}</Artist>
+        <Title>{props.card.title}</Title>
 
         <ImgContainer>
-          <Img src={props.card.img} alt="albumcover" />
+          <Img src={props.card.img} alt="bookcover" />
         </ImgContainer>
 
-        <Album>
-          <Title>{props.card.author}</Title>
-        </Album>
+        <AuthorBox>
+          <Author>{props.card.author}</Author>
+        </AuthorBox>
       </Left>
 
       <Right>
+        <SumTitle>Summary</SumTitle>
         <Summary>{props.card.summary}</Summary>
       </Right>
         
@@ -56,13 +57,18 @@ const Left = styled.div`
 width:40%;
 `;
 
-const Artist = styled.div`
+const Author = styled.h1`
 
 `;
 
-const Album = styled.div`
+const AuthorBox = styled.div`
 
 `;
+
+const SumTitle = styled.h1`
+
+`;
+
 
 const Summary = styled.p`
 
