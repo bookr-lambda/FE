@@ -3,6 +3,7 @@ import Content from './components/Content/Content';
 import styled from "styled-components";
 import {Signup} from "./components/Signup";
 import {Login} from "./components/Login";
+import { NavLink, Route } from "react-router-dom";
 const App = () => {
   return (
     <AppContainer>
