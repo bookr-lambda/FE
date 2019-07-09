@@ -1,10 +1,11 @@
 import React from 'react';
 import Content from './components/Content/Content';
 import styled from "styled-components";
-
+import Signup from "./components/Signup/index"
 const App = () => {
   return (
     <AppContainer>
+      <Signup />
       <Content />
     </AppContainer>
   );
