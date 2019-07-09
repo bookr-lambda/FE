@@ -26,6 +26,7 @@ const Card = props => {
         <Summary>{props.card.volumeInfo.description}</Summary>
         <em>********** TODO Average Rating Component **********</em>
         <div>{props.card.volumeInfo.averageRating}</div>
+
       </Right>
         
 
