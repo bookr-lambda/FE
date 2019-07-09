@@ -8,20 +8,24 @@ const Card = props => {
     <CardBody>
 
       <Left>
-        <Title>{props.card.title}</Title>
+        <Title>{props.card.volumeInfo.title}</Title>
 
         <ImgContainer>
-          <Img src={props.card.img} alt="bookcover" />
+          <Img src={props.card.volumeInfo.imageLinks.small} alt="bookcover" />
         </ImgContainer>
 
         <AuthorBox>
-          <Author>{props.card.author}</Author>
+          <em>********** TODO Allow for multiple authors **********</em>
+          
+          <Author>{props.card.volumeInfo.authors}</Author>
         </AuthorBox>
       </Left>
 
       <Right>
         <SumTitle>Summary</SumTitle>
-        <Summary>{props.card.summary}</Summary>
+        <Summary>{props.card.volumeInfo.description}</Summary>
+        <em>********** TODO Average Rating Component **********</em>
+        <div>{props.card.volumeInfo.averageRating}</div>
       </Right>
         
 
@@ -76,6 +80,10 @@ const SumTitle = styled.h1`
 
 const Summary = styled.p`
 
+`;
+
+const Button = styled.button`
+  
 `;
 
 const ImgContainer = styled.div`
