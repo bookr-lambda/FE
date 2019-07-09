@@ -1,7 +1,7 @@
 import React from 'react';
 import Content from './components/Content/Content';
 import styled from "styled-components";
-import Signup from "./components/Signup/index"
+import Signup from "./components/Signup"
 const App = () => {
   return (
     <AppContainer>
