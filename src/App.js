@@ -1,12 +1,15 @@
-import React from 'react';
-import Content from './components/Content/Content';
+import React from "react";
+import Content from "./components/Content/Content";
 import styled from "styled-components";
-import {Signup} from "./components/Signup";
-import {Login} from "./components/Login";
+import { Signup } from "./components/Signup";
+import { Login } from "./components/Login";
 import { NavLink, Route } from "react-router-dom";
 const App = () => {
   return (
     <AppContainer>
+      <div>
+        <h1>Welcome to Bookr</h1>
+      </div>
       <NavLink to="/login">Login</NavLink>
       <NavLink to="/signup">Signup</NavLink>
       <div>
@@ -16,7 +19,7 @@ const App = () => {
       <Content />
     </AppContainer>
   );
-}
+};
 
 export default App;
 
