@@ -2,11 +2,14 @@ import React from 'react';
 import Tab from './Tab';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
+import Button from '@material-ui/core/Button';
 
 const Tabs = props => {
   return (
     <TopicTabs>
-      <Button>Sign-Up/Sign-In</Button>
+      <Button variant="contained" color="primary">
+      Sign-In/Sign-up
+    </Button>
       <Topics>
        
         {props.tabs.map(tab => {return <Tab key={tab}
@@ -36,11 +39,11 @@ display: flex;
   
 `;
 
-const Button = styled.button`
-margin: 10px;
-margin-right:33%;
+// const Button = styled.button`
+// margin: 10px;
+// margin-right:33%;
 
-`;
+// `;
 
 const Topics = styled.div`
   display: flex;
