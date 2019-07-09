@@ -1,18 +1,10 @@
 import React from 'react';
 import Content from './components/Content/Content';
 import styled from "styled-components";
-import {Signup} from "./components/Signup";
-import {Login} from "./components/Login";
-import { NavLink, Route } from "react-router-dom";
+
 const App = () => {
   return (
     <AppContainer>
-      <NavLink to="/login">Login</NavLink>
-      <NavLink to="/signup">Signup</NavLink>
-      <div>
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={Signup} />
-      </div>
       <Content />
     </AppContainer>
   );
