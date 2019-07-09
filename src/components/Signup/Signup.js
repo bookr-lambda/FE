@@ -22,7 +22,7 @@ export default class Signup extends Component {
   signup = e => {
     e.preventDefault();
     axios
-      .post("https://bookrbe.herokuapp.com/register", this.state)
+      .post("https://bookrbe.herokuapp.com/auth/register", this.state)
       .then(res => {
         localStorage.setItem("token", res.data.token);
       })

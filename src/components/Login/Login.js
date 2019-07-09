@@ -22,7 +22,7 @@ export default class Login extends Component {
   login = e => {
     e.preventDefault();
     axios
-      .post("https://bookrbe.herokuapp.com/login", this.state)
+      .post("https://bookrbe.herokuapp.com/auth/login", this.state)
       .then(res => {
         localStorage.setItem("token", res.data.token);
       })
